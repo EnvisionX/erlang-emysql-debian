@@ -15,3 +15,7 @@ Description: MySQL client for Erlang
  Implements a stable driver toward the MySQL database. It
  currently support fairly recent versions (somewhere around
  5.3+) and it is considered fairly stable in production.
+
+Package: erlang-emysql-dev
+Architecture: all
+Description: MySQL client for Erlang - header files

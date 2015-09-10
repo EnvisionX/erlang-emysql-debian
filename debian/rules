@@ -12,5 +12,14 @@ override_dh_auto_build:
 
 override_dh_auto_test:
 
-# To 'make install' to work:
-export prefix=debian/erlang-emysql
+DESTDIR = debian/erlang-emysql
+DEV_DESTDIR = debian/erlang-emysql-dev
+APP_DIR = /usr/lib/erlang/lib/emysql-0.4.1
+
+override_dh_auto_install:
+
+override_dh_install:
+	install -m 755 -d $(DESTDIR)/$(APP_DIR)/ebin
+	install -m 644 ebin/*.beam ebin/*.app $(DESTDIR)/$(APP_DIR)/ebin
+	install -m 755 -d $(DEV_DESTDIR)/$(APP_DIR)/include
+	install -m 644 include/*.hrl $(DEV_DESTDIR)/$(APP_DIR)/include
