@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	rebar compile
+
+override_dh_auto_test:
+
+# To 'make install' to work:
+export prefix=debian/erlang-emysql

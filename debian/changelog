@@ -1,0 +1,5 @@
+erlang-emysql (0.4.1-1) unstable; urgency=low
+
+  * Initial release for Debian Jessie.
+
+ -- Aleksey Morarash <aleksey.morarash@gmail.com>  Thu, 10 Sep 2015 12:42:00 +0300

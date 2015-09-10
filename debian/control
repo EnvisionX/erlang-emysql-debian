@@ -1,0 +1,17 @@
+Source: erlang-emysql
+Section: devel
+Priority: extra
+Maintainer: Aleksey Morarash <aleksey.morarash@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), rebar
+Standards-Version: 3.9.3
+Homepage: https://github.com/Eonblast/Emysql
+Vcs-Browser: https://github.com/Eonblast/Emysql
+Vcs-Git: https://github.com/Eonblast/Emysql.git
+
+Package: erlang-emysql
+Architecture: all
+Depends: erlang-base, erlang-crypto
+Description: MySQL client for Erlang
+ Implements a stable driver toward the MySQL database. It
+ currently support fairly recent versions (somewhere around
+ 5.3+) and it is considered fairly stable in production.
