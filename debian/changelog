@@ -1,4 +1,4 @@
-erlang-emysql (0.4.1-1) unstable; urgency=low
+erlang-emysql (0.4.1-3) unstable; urgency=low
 
   * Initial release for Debian Jessie.
 
